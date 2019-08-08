@@ -8,7 +8,7 @@ class App extends Component {
     return (
       <Fragment>
         <NavBar />
-        <Container>        
+        <Container className="main">        
           <EventDashboard />
         </Container>
       </Fragment>
