@@ -7,10 +7,10 @@ class App extends Component {
   render() {
     return (
       <Fragment>
-      <NavBar />
-      <Container className="main">        
-        <EventDashboard />
-      </Container>
+        <NavBar />
+        <Container>        
+          <EventDashboard />
+        </Container>
       </Fragment>
     );
   }
