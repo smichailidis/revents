@@ -2,12 +2,14 @@ import React, { Component, Fragment } from 'react'
 import EventListItem from './EventListItem';
 
 class EventList extends Component {
+    
     render() {
+        console.log(this.props.events);
         return (
             <Fragment>
-               <EventListItem />
-               <EventListItem /> 
-               <EventListItem />  
+                {this.props.events.map(event => (
+                    <EventListItem key={event.id} event={event} />
+                ))}  
             </Fragment>
         )
     }
